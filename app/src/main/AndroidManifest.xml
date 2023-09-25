@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" >
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AndroidConcepts"
+        tools:targetApi="31" >
+
+        <activity
+            android:name=".activities.launch_modes.ActivityLmC"
+            android:exported="false" />
+        <activity
+            android:name=".activities.launch_modes.ActivityLmB"
+            android:exported="false" />
+        <activity
+            android:name=".activities.launch_modes.ActivityLmA"
+            android:exported="true" >
+
+<!-- Uncomment below to learn launch modes  -->
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+
+        </activity>
+        <activity
+            android:name=".activities.lifecycle.ActivityC"
+            android:exported="false" />
+        <activity
+            android:name=".activities.lifecycle.ActivityB"
+            android:exported="false" />
+        <activity
+            android:name=".activities.lifecycle.ActivityA"
+            android:exported="true" >
+            <!--uncomment below to learn lifecycle />-->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>
